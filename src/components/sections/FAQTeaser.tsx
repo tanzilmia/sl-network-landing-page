@@ -31,10 +31,10 @@ export function FAQTeaser() {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <AnimateSection className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white">
               Frequently Asked Questions
             </h2>
-            <p className="mt-4 text-lg text-slate-600">
+            <p className="mt-4 text-lg text-slate-400">
               Quick answers to common questions.
             </p>
           </AnimateSection>
@@ -57,11 +57,11 @@ export function FAQTeaser() {
                   hidden: { opacity: 0, y: 12 },
                   visible: { opacity: 1, y: 0 },
                 }}
-                className="rounded-xl border border-slate-200 overflow-hidden"
+                className="rounded-xl border border-slate-700 overflow-hidden"
               >
                 <motion.button
                   type="button"
-                  className="w-full flex items-center justify-between px-6 py-4 text-left font-medium text-slate-900 hover:bg-slate-50 transition-colors"
+                  className="w-full flex items-center justify-between px-6 py-4 text-left font-medium text-white hover:bg-slate-800 transition-colors"
                   onClick={() => setOpenIndex(openIndex === i ? null : i)}
                   whileHover={{ backgroundColor: "rgba(248, 250, 252, 0.8)" }}
                   whileTap={{ scale: 0.995 }}
@@ -92,7 +92,7 @@ export function FAQTeaser() {
                       transition={{ duration: 0.3, ease: [0.25, 0.4, 0.25, 1] }}
                       className="overflow-hidden"
                     >
-                      <div className="px-6 pb-4 text-slate-600 text-sm leading-relaxed">
+                      <div className="px-6 pb-4 text-slate-400 text-sm leading-relaxed">
                         {faq.a}
                       </div>
                     </motion.div>

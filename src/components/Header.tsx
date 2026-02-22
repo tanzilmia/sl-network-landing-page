@@ -17,7 +17,7 @@ export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 shadow-sm">
+    <header className="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-700 shadow-lg shadow-black/20">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 lg:h-20">
           <Link href="/" className="flex items-center gap-2">
@@ -28,14 +28,14 @@ export function Header() {
             >
               <span className="text-white font-bold text-xl">SL</span>
             </motion.div>
-            <span className="font-bold text-xl text-slate-900">SL Network</span>
+            <span className="font-bold text-xl text-white">SL Network</span>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href}>
                 <motion.span
-                  className="text-slate-600 hover:text-cyan-600 font-medium transition-colors block"
+                  className="text-slate-300 hover:text-cyan-400 font-medium transition-colors block"
                   whileHover={{ y: -1 }}
                 >
                   {link.label}
@@ -47,7 +47,7 @@ export function Header() {
           <div className="hidden lg:flex items-center gap-4">
             <Link
               href="/portal"
-              className="text-slate-600 hover:text-cyan-600 font-medium transition-colors"
+              className="text-slate-300 hover:text-cyan-400 font-medium transition-colors"
             >
               Selfcare
             </Link>
@@ -64,7 +64,7 @@ export function Header() {
 
           <motion.button
             type="button"
-            className="lg:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100"
+            className="lg:hidden p-2 rounded-lg text-slate-300 hover:bg-slate-800"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
             whileTap={{ scale: 0.95 }}
@@ -103,7 +103,7 @@ export function Header() {
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3, ease: [0.25, 0.4, 0.25, 1] }}
             >
-              <nav className="flex flex-col gap-2 py-4 border-t border-slate-200">
+              <nav className="flex flex-col gap-2 py-4 border-t border-slate-700">
                 {navLinks.map((link, i) => (
                   <motion.div
                     key={link.href}
@@ -113,7 +113,7 @@ export function Header() {
                   >
                     <Link
                       href={link.href}
-                      className="px-4 py-2 text-slate-600 hover:bg-slate-50 hover:text-cyan-600 rounded-lg font-medium transition-colors block"
+                      className="px-4 py-2 text-slate-300 hover:bg-slate-800 hover:text-cyan-400 rounded-lg font-medium transition-colors block"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {link.label}
@@ -122,7 +122,7 @@ export function Header() {
                 ))}
                 <Link
                   href="/portal"
-                  className="px-4 py-2 text-slate-600 hover:bg-slate-50 rounded-lg font-medium block"
+                  className="px-4 py-2 text-slate-300 hover:bg-slate-800 rounded-lg font-medium block"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Selfcare

@@ -48,13 +48,13 @@ const features = [
 
 export function WhyChooseUs() {
   return (
-    <section className="py-16 lg:py-24 bg-slate-50">
+    <section className="py-16 lg:py-24 bg-slate-900">
       <div className="container mx-auto px-4">
         <AnimateSection className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">
             Why Choose SL Network
           </h2>
-          <p className="mt-4 text-lg text-slate-600">
+          <p className="mt-4 text-lg text-slate-400">
             We combine cutting-edge technology with dedicated service to deliver
             the best internet experience.
           </p>
@@ -64,7 +64,7 @@ export function WhyChooseUs() {
             <motion.div
               key={i}
               variants={fadeInUp}
-              className="group rounded-2xl bg-white p-6 shadow-sm border border-slate-200 hover:shadow-lg hover:border-cyan-200 transition-all duration-300"
+              className="group rounded-2xl bg-slate-800 p-6 shadow-sm border border-slate-700 hover:shadow-lg hover:border-cyan-500/50 transition-all duration-300"
               whileHover={{ y: -4 }}
             >
               <motion.div
@@ -74,10 +74,10 @@ export function WhyChooseUs() {
               >
                 {feature.icon}
               </motion.div>
-              <h3 className="font-semibold text-lg text-slate-900 mb-2">
+              <h3 className="font-semibold text-lg text-white mb-2">
                 {feature.title}
               </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-slate-400 text-sm leading-relaxed">
                 {feature.description}
               </p>
             </motion.div>

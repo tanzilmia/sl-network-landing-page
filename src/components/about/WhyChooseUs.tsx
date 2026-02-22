@@ -33,10 +33,10 @@ export function WhyChooseUs() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white">
             Why Choose SL Network
           </h2>
-          <p className="mt-4 text-lg text-slate-600">
+          <p className="mt-4 text-lg text-slate-400">
             Our commitment to excellence sets us apart in the industry.
           </p>
         </motion.div>
@@ -45,13 +45,13 @@ export function WhyChooseUs() {
             <motion.div
               key={i}
               variants={fadeInUp}
-              className="rounded-xl bg-slate-50 p-6 border border-slate-200"
+              className="rounded-xl bg-slate-800 p-6 border border-slate-700"
               whileHover={{ y: -4, borderColor: "rgb(34 211 238)", backgroundColor: "rgb(248 250 252)" }}
             >
-              <h3 className="font-semibold text-slate-900 mb-2">
+              <h3 className="font-semibold text-white mb-2">
                 {feature.title}
               </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-slate-400 text-sm leading-relaxed">
                 {feature.description}
               </p>
             </motion.div>

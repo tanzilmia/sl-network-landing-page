@@ -13,10 +13,10 @@ export function OurStory() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white">
             Our Story
           </h2>
-          <div className="mt-6 space-y-4 text-slate-600 leading-relaxed">
+          <div className="mt-6 space-y-4 text-slate-400 leading-relaxed">
             <p>
               SL Network is a home and corporate broadband internet service
               provider that has been operating for over 10 years. We have gained

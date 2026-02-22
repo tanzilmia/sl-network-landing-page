@@ -52,10 +52,10 @@ export function FeaturedPlans() {
     <section className="py-16 lg:py-24">
       <div className="container mx-auto px-4">
         <AnimateSection className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">
             Competitive Plans for Every Need
           </h2>
-          <p className="mt-4 text-lg text-slate-600">
+          <p className="mt-4 text-lg text-slate-400">
             Choose the perfect plan for your home or business. All plans include
             optical fiber and 24/7 support.
           </p>
@@ -68,7 +68,7 @@ export function FeaturedPlans() {
               className={`relative rounded-2xl border-2 p-6 lg:p-8 transition-all duration-300 ${
                 plan.popular
                   ? "border-cyan-500 bg-cyan-50/50 shadow-xl shadow-cyan-500/10 scale-105 z-10"
-                  : "border-slate-200 bg-white hover:border-cyan-200 hover:shadow-lg"
+                  : "border-slate-700 bg-slate-800 hover:border-cyan-500/50 hover:shadow-lg"
               }`}
               whileHover={{ y: plan.popular ? 0 : -6 }}
             >
@@ -80,14 +80,14 @@ export function FeaturedPlans() {
                 </div>
               )}
               <div className="text-center mb-6">
-                <h3 className="font-semibold text-lg text-slate-900">
+                <h3 className="font-semibold text-lg text-white">
                   {plan.name}
                 </h3>
                 <div className="mt-2">
-                  <span className="text-3xl font-bold text-slate-900">
+                  <span className="text-3xl font-bold text-white">
                     ৳{plan.price}
                   </span>
-                  <span className="text-slate-600">/month</span>
+                  <span className="text-slate-400">/month</span>
                 </div>
                 <p className="text-sm text-slate-500 mt-1">{plan.speed}</p>
               </div>
@@ -111,7 +111,7 @@ export function FeaturedPlans() {
                   className={`block w-full text-center rounded-xl py-3 font-semibold ${
                     plan.popular
                       ? "bg-gradient-to-r from-cyan-500 to-teal-500 text-white shadow-lg"
-                      : "bg-slate-100 text-slate-800"
+                      : "bg-slate-700 text-slate-200"
                   }`}
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
@@ -125,7 +125,7 @@ export function FeaturedPlans() {
         <AnimateSection className="text-center mt-10">
           <Link
             href="/plans"
-            className="inline-flex items-center gap-2 text-cyan-600 font-semibold hover:text-cyan-700 group"
+            className="inline-flex items-center gap-2 text-cyan-400 font-semibold hover:text-cyan-300 group"
           >
             View All Plans
             <motion.span

@@ -11,16 +11,16 @@ const stats = [
 
 export function TrustBar() {
   return (
-    <section className="relative z-10 -mt-8">
+    <section className="relative z-10 -mt-16">
       <div className="container mx-auto px-4">
         <motion.div
-          className="rounded-2xl bg-white shadow-xl shadow-slate-200/50 border border-slate-200 overflow-hidden"
+          className="rounded-2xl bg-slate-800 shadow-xl shadow-black/30 border border-slate-700 overflow-hidden"
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          <div className="grid grid-cols-2 lg:grid-cols-4 divide-y lg:divide-y-0 lg:divide-x divide-slate-200">
+          <div className="grid grid-cols-2 lg:grid-cols-4 divide-y lg:divide-y-0 lg:divide-x divide-slate-700">
             {stats.map((stat, i) => (
               <motion.div
                 key={i}
@@ -33,7 +33,7 @@ export function TrustBar() {
                 <span className="text-2xl sm:text-3xl font-bold text-cyan-600">
                   {stat.value}
                 </span>
-                <span className="mt-1 text-sm text-slate-600">{stat.label}</span>
+                <span className="mt-1 text-sm text-slate-400">{stat.label}</span>
               </motion.div>
             ))}
           </div>

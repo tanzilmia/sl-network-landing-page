@@ -36,7 +36,7 @@ const addons = [
 
 export function ServiceAddons() {
   return (
-    <section className="py-16 lg:py-24 bg-slate-50">
+    <section className="py-16 lg:py-24 bg-slate-900">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center max-w-2xl mx-auto mb-12"
@@ -45,10 +45,10 @@ export function ServiceAddons() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white">
             Add-on Services
           </h2>
-          <p className="mt-4 text-slate-600">
+          <p className="mt-4 text-slate-400">
             Enhance your connection with these optional add-ons for power users
             and businesses.
           </p>
@@ -58,16 +58,16 @@ export function ServiceAddons() {
             <motion.div
               key={i}
               variants={fadeInUp}
-              className="rounded-2xl bg-white p-6 shadow-sm border border-slate-200"
+              className="rounded-2xl bg-slate-800 p-6 shadow-sm border border-slate-700"
               whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1)" }}
             >
               <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center text-white mb-4">
                 {addon.icon}
               </div>
-              <h3 className="font-semibold text-lg text-slate-900 mb-2">
+              <h3 className="font-semibold text-lg text-white mb-2">
                 {addon.title}
               </h3>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-slate-400 text-sm leading-relaxed">
                 {addon.description}
               </p>
             </motion.div>

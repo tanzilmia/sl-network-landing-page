@@ -23,7 +23,7 @@ const features = [
 
 export function PlansFeatures() {
   return (
-    <section className="py-16 lg:py-24 bg-slate-50">
+    <section className="py-16 lg:py-24 bg-slate-900">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center max-w-2xl mx-auto mb-12"
@@ -32,10 +32,10 @@ export function PlansFeatures() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white">
             What&apos;s Included in Every Plan
           </h2>
-          <p className="mt-4 text-slate-600">
+          <p className="mt-4 text-slate-400">
             All our plans come with these core features at no extra cost.
           </p>
         </motion.div>
@@ -43,7 +43,7 @@ export function PlansFeatures() {
           {features.map((feature, i) => (
             <motion.div
               key={i}
-              className="flex items-start gap-4 rounded-xl bg-white p-6 border border-slate-200"
+              className="flex items-start gap-4 rounded-xl bg-slate-800 p-6 border border-slate-700"
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -65,8 +65,8 @@ export function PlansFeatures() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-semibold text-slate-900">{feature.title}</h3>
-                <p className="mt-1 text-sm text-slate-600">
+                <h3 className="font-semibold text-white">{feature.title}</h3>
+                <p className="mt-1 text-sm text-slate-400">
                   {feature.description}
                 </p>
               </div>

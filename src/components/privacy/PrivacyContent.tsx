@@ -88,23 +88,23 @@ export function PrivacyContent() {
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.4, delay: i * 0.05 }}
             >
-              <h2 className="text-xl font-bold text-slate-900 mb-3">
+              <h2 className="text-xl font-bold text-white mb-3">
                 {section.title}
               </h2>
-              <div className="text-slate-600 leading-relaxed whitespace-pre-line">
+              <div className="text-slate-400 leading-relaxed whitespace-pre-line">
                 {section.content}
               </div>
             </motion.div>
           ))}
           <motion.div
-            className="mt-12 pt-8 border-t border-slate-200"
+            className="mt-12 pt-8 border-t border-slate-700"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
             <Link
               href="/contact"
-              className="text-cyan-600 font-medium hover:text-cyan-700"
+              className="text-cyan-400 font-medium hover:text-cyan-300"
             >
               ← Back to Contact
             </Link>

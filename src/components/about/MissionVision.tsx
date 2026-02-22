@@ -28,10 +28,10 @@ const items = [
 
 export function MissionVision() {
   return (
-    <section className="py-16 lg:py-24 bg-slate-50">
+    <section className="py-16 lg:py-24 bg-slate-900">
       <div className="container mx-auto px-4">
         <motion.h2
-          className="text-2xl sm:text-3xl font-bold text-slate-900 text-center mb-12"
+          className="text-2xl sm:text-3xl font-bold text-white text-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -43,7 +43,7 @@ export function MissionVision() {
           {items.map((item, i) => (
             <motion.div
               key={item.title}
-              className="rounded-2xl bg-white p-8 shadow-sm border border-slate-200"
+              className="rounded-2xl bg-slate-800 p-8 shadow-sm border border-slate-700"
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.3 }}
@@ -53,10 +53,10 @@ export function MissionVision() {
               <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center text-white mb-4">
                 {item.icon}
               </div>
-              <h3 className="font-semibold text-xl text-slate-900 mb-2">
+              <h3 className="font-semibold text-xl text-white mb-2">
                 {item.title}
               </h3>
-              <p className="text-slate-600 leading-relaxed">{item.description}</p>
+              <p className="text-slate-400 leading-relaxed">{item.description}</p>
             </motion.div>
           ))}
         </div>

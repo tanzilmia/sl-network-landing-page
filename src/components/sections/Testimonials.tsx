@@ -28,13 +28,13 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-16 lg:py-24 bg-slate-50">
+    <section className="py-16 lg:py-24 bg-slate-900">
       <div className="container mx-auto px-4">
         <AnimateSection className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">
             What Our Clients Say
           </h2>
-          <p className="mt-4 text-lg text-slate-600">
+          <p className="mt-4 text-lg text-slate-400">
             Join thousands of satisfied customers who trust SL Network for their
             internet needs.
           </p>
@@ -44,7 +44,7 @@ export function Testimonials() {
             <motion.div
               key={i}
               variants={fadeInUp}
-              className="rounded-2xl bg-white p-6 shadow-sm border border-slate-200"
+              className="rounded-2xl bg-slate-800 p-6 shadow-sm border border-slate-700"
               whileHover={{ y: -4, boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)" }}
             >
               <div className="flex gap-1 mb-3">
@@ -59,10 +59,10 @@ export function Testimonials() {
                   </svg>
                 ))}
               </div>
-              <p className="text-slate-600 text-sm leading-relaxed">
+              <p className="text-slate-400 text-sm leading-relaxed">
                 &ldquo;{t.text}&rdquo;
               </p>
-              <p className="mt-4 font-semibold text-slate-900">— {t.name}</p>
+              <p className="mt-4 font-semibold text-white">— {t.name}</p>
             </motion.div>
           ))}
         </AnimateStagger>

@@ -13,7 +13,7 @@ const features = [
 
 export function NetworkSolutions() {
   return (
-    <section className="py-16 lg:py-24 bg-slate-50">
+    <section className="py-16 lg:py-24 bg-slate-900">
       <div className="container mx-auto px-4">
         <motion.div
           className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"
@@ -22,10 +22,10 @@ export function NetworkSolutions() {
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="order-2 lg:order-1 rounded-2xl bg-white p-8 lg:p-12 border border-slate-200 shadow-sm">
+          <div className="order-2 lg:order-1 rounded-2xl bg-slate-800 p-8 lg:p-12 border border-slate-700 shadow-sm">
             <p className="text-slate-500 text-sm font-medium uppercase tracking-wider">Best for</p>
-            <p className="mt-2 text-xl font-semibold text-slate-900">Offices & Small Businesses</p>
-            <p className="mt-4 text-slate-600">
+            <p className="mt-2 text-xl font-semibold text-white">Offices & Small Businesses</p>
+            <p className="mt-4 text-slate-400">
               We offer simpler, smarter, and more cost-effective network solutions.
               From initial setup to ongoing maintenance, we handle it all.
             </p>
@@ -36,10 +36,10 @@ export function NetworkSolutions() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
               </svg>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">
               Complete Network Solutions
             </h2>
-            <p className="mt-4 text-slate-600 leading-relaxed">
+            <p className="mt-4 text-slate-400 leading-relaxed">
               We offer simpler, smarter, and more cost-effective network solutions
               for offices and small businesses. From design and setup to
               maintenance and support, we provide end-to-end solutions tailored
@@ -47,7 +47,7 @@ export function NetworkSolutions() {
             </p>
             <ul className="mt-6 space-y-3">
               {features.map((feature, i) => (
-                <li key={i} className="flex items-center gap-2 text-slate-600">
+                <li key={i} className="flex items-center gap-2 text-slate-400">
                   <svg className="w-5 h-5 text-cyan-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -57,7 +57,7 @@ export function NetworkSolutions() {
             </ul>
             <Link href="/contact">
               <motion.span
-                className="inline-flex items-center gap-2 mt-8 text-cyan-600 font-semibold hover:text-cyan-700"
+                className="inline-flex items-center gap-2 mt-8 text-cyan-400 font-semibold hover:text-cyan-300"
                 whileHover={{ x: 4 }}
               >
                 Get a Quote

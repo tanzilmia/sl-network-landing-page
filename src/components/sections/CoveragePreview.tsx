@@ -26,7 +26,7 @@ export function CoveragePreview() {
             </div>
             <Link href="/coverage">
               <motion.span
-                className="inline-flex items-center justify-center rounded-xl bg-white text-slate-900 px-8 py-4 font-semibold shrink-0"
+                className="inline-flex items-center justify-center rounded-xl bg-white text-slate-900 px-8 py-4 font-semibold shrink-0 hover:bg-slate-100"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
               >

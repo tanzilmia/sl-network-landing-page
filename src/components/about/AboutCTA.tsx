@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function AboutCTA() {
   return (
-    <section className="py-16 lg:py-24 bg-slate-50">
+    <section className="py-16 lg:py-24 bg-slate-900">
       <div className="container mx-auto px-4 text-center">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -13,10 +13,10 @@ export function AboutCTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white">
             Ready to Get Connected?
           </h2>
-          <p className="mt-4 text-slate-600 max-w-xl mx-auto">
+          <p className="mt-4 text-slate-400 max-w-xl mx-auto">
             Join SL Network today and experience ultra-fast, reliable internet for
             your home or business.
           </p>

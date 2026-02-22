@@ -17,7 +17,7 @@ const areas = [
 
 export function ServedAreas() {
   return (
-    <section className="py-16 lg:py-24 bg-slate-50">
+    <section className="py-16 lg:py-24 bg-slate-900">
       <div className="container mx-auto px-4">
         <motion.div
           className="text-center max-w-2xl mx-auto mb-12"
@@ -26,10 +26,10 @@ export function ServedAreas() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white">
             Areas We Serve
           </h2>
-          <p className="mt-4 text-slate-600">
+          <p className="mt-4 text-slate-400">
             SL Network provides high-speed broadband in the following areas. We
             are continuously expanding our coverage.
           </p>
@@ -42,7 +42,7 @@ export function ServedAreas() {
             <motion.div
               key={i}
               variants={fadeInUp}
-              className="flex items-center gap-4 rounded-xl bg-white p-4 border border-slate-200 shadow-sm"
+              className="flex items-center gap-4 rounded-xl bg-slate-800 p-4 border border-slate-700 shadow-sm"
               whileHover={{ y: -2, boxShadow: "0 10px 15px -3px rgb(0 0 0 / 0.1)" }}
             >
               <div className="w-10 h-10 rounded-lg bg-cyan-100 flex items-center justify-center flex-shrink-0">
@@ -67,20 +67,20 @@ export function ServedAreas() {
                 </svg>
               </div>
               <div>
-                <h3 className="font-semibold text-slate-900">{area.name}</h3>
-                <p className="text-sm text-slate-500">{area.description}</p>
+                <h3 className="font-semibold text-white">{area.name}</h3>
+                <p className="text-sm text-slate-400">{area.description}</p>
               </div>
             </motion.div>
           ))}
         </AnimateStagger>
         <motion.p
-          className="text-center mt-8 text-slate-600 text-sm"
+          className="text-center mt-8 text-slate-400 text-sm"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
         >
           Don&apos;t see your area?{" "}
-          <Link href="/contact" className="text-cyan-600 font-medium hover:text-cyan-700">
+          <Link href="/contact" className="text-cyan-400 font-medium hover:text-cyan-300">
             Contact us
           </Link>{" "}
           — we may be expanding to your location soon.

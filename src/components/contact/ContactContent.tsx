@@ -36,17 +36,17 @@ export function ContactContent() {
           transition={{ duration: 0.5 }}
         >
           {/* Contact Form */}
-          <div className="rounded-2xl bg-white shadow-xl border border-slate-200 p-8 lg:p-10">
-            <h2 className="text-2xl font-bold text-slate-900">
+          <div className="rounded-2xl bg-slate-800 shadow-xl border border-slate-700 p-8 lg:p-10">
+            <h2 className="text-2xl font-bold text-white">
               Send Message
             </h2>
-            <p className="mt-2 text-slate-600">
+            <p className="mt-2 text-slate-400">
               Fill out the form and we&apos;ll get back to you within 24 hours.
             </p>
             {!submitted ? (
               <form onSubmit={handleSubmit} className="mt-6 space-y-5">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-1">
+                  <label htmlFor="name" className="block text-sm font-medium text-slate-300 mb-1">
                     Name *
                   </label>
                   <input
@@ -56,13 +56,13 @@ export function ContactContent() {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
+                    className="w-full rounded-xl border border-slate-600 bg-slate-900 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
                     placeholder="Your name"
                   />
                 </div>
                 <div className="grid sm:grid-cols-2 gap-5">
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-1">
+                    <label htmlFor="email" className="block text-sm font-medium text-slate-300 mb-1">
                       Email *
                     </label>
                     <input
@@ -72,12 +72,12 @@ export function ContactContent() {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
+                      className="w-full rounded-xl border border-slate-600 bg-slate-900 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
                       placeholder="your@email.com"
                     />
                   </div>
                   <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-1">
+                    <label htmlFor="phone" className="block text-sm font-medium text-slate-300 mb-1">
                       Phone
                     </label>
                     <input
@@ -86,13 +86,13 @@ export function ContactContent() {
                       name="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
+                      className="w-full rounded-xl border border-slate-600 bg-slate-900 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
                       placeholder="01XXXXXXXXX"
                     />
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-1">
+                  <label htmlFor="subject" className="block text-sm font-medium text-slate-300 mb-1">
                     Subject *
                   </label>
                   <select
@@ -101,7 +101,7 @@ export function ContactContent() {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
+                    className="w-full rounded-xl border border-slate-600 bg-slate-900 px-4 py-3 text-white focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
                   >
                     <option value="">Select a subject</option>
                     <option value="new-connection">New Connection</option>
@@ -112,7 +112,7 @@ export function ContactContent() {
                   </select>
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-1">
+                  <label htmlFor="message" className="block text-sm font-medium text-slate-300 mb-1">
                     Message *
                   </label>
                   <textarea
@@ -122,7 +122,7 @@ export function ContactContent() {
                     onChange={handleChange}
                     required
                     rows={4}
-                    className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 resize-none"
+                    className="w-full rounded-xl border border-slate-600 bg-slate-900 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20 resize-none"
                     placeholder="How can we help you?"
                   />
                 </div>
@@ -137,15 +137,15 @@ export function ContactContent() {
               </form>
             ) : (
               <motion.div
-                className="mt-6 p-6 rounded-xl bg-cyan-50 border border-cyan-200"
+                className="mt-6 p-6 rounded-xl bg-cyan-950/50 border border-cyan-800"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
               >
-                <p className="text-cyan-800 font-semibold">
+                <p className="text-cyan-300 font-semibold">
                   Thank you for your message!
                 </p>
-                <p className="mt-2 text-cyan-700">
+                <p className="mt-2 text-cyan-400">
                   We&apos;ve received your inquiry and will get back to you within
                   24 hours. For urgent matters, please call us directly.
                 </p>
@@ -155,7 +155,7 @@ export function ContactContent() {
                     setSubmitted(false);
                     setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
                   }}
-                  className="mt-4 text-sm text-cyan-600 font-medium hover:text-cyan-700"
+                  className="mt-4 text-sm text-cyan-400 font-medium hover:text-cyan-300"
                 >
                   Send another message
                 </button>
@@ -166,12 +166,12 @@ export function ContactContent() {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-2xl font-bold text-slate-900 mb-6">
+              <h2 className="text-2xl font-bold text-white mb-6">
                 Contact Information
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-cyan-100 flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-cyan-900/50 flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-6 h-6 text-cyan-600"
                       fill="none"
@@ -193,14 +193,14 @@ export function ContactContent() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900">Office Address</h3>
-                    <p className="mt-1 text-slate-600">
+                    <h3 className="font-semibold text-white">Office Address</h3>
+                    <p className="mt-1 text-slate-400">
                       Bil Muril, Tangail Sadar, Tangail
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-cyan-100 flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-cyan-900/50 flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-6 h-6 text-cyan-600"
                       fill="none"
@@ -216,17 +216,17 @@ export function ContactContent() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900">Phone</h3>
+                    <h3 className="font-semibold text-white">Phone</h3>
                     <a
                       href="tel:+8801600348844"
-                      className="mt-1 text-cyan-600 hover:text-cyan-700 font-medium"
+                      className="mt-1 text-cyan-400 hover:text-cyan-300 font-medium"
                     >
                       +88 01600-348844
                     </a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-cyan-100 flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-cyan-900/50 flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-6 h-6 text-cyan-600"
                       fill="none"
@@ -242,17 +242,17 @@ export function ContactContent() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900">Email</h3>
+                    <h3 className="font-semibold text-white">Email</h3>
                     <a
                       href="mailto:sslatifmia@gmail.com"
-                      className="mt-1 text-cyan-600 hover:text-cyan-700 font-medium"
+                      className="mt-1 text-cyan-400 hover:text-cyan-300 font-medium"
                     >
                       sslatifmia@gmail.com
                     </a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-cyan-100 flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 rounded-xl bg-cyan-900/50 flex items-center justify-center flex-shrink-0">
                     <svg
                       className="w-6 h-6 text-cyan-600"
                       fill="none"
@@ -268,20 +268,20 @@ export function ContactContent() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900">Support Hours</h3>
-                    <p className="mt-1 text-slate-600">24/7</p>
+                    <h3 className="font-semibold text-white">Support Hours</h3>
+                    <p className="mt-1 text-slate-400">24/7</p>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Quick Links */}
-            <div className="rounded-2xl bg-slate-50 border border-slate-200 p-6">
-              <h3 className="font-semibold text-slate-900 mb-4">Quick Links</h3>
+            <div className="rounded-2xl bg-slate-800 border border-slate-700 p-6">
+              <h3 className="font-semibold text-white mb-4">Quick Links</h3>
               <div className="flex flex-wrap gap-3">
                 <Link href="/portal">
                   <motion.span
-                    className="inline-flex items-center rounded-xl bg-white px-4 py-2.5 text-sm font-medium text-slate-700 border border-slate-200 hover:border-cyan-300 hover:text-cyan-600 transition-colors"
+                    className="inline-flex items-center rounded-xl bg-slate-800 px-4 py-2.5 text-sm font-medium text-slate-200 border border-slate-600 hover:border-cyan-500 hover:text-cyan-400 transition-colors"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
@@ -290,7 +290,7 @@ export function ContactContent() {
                 </Link>
                 <Link href="/portal/pay">
                   <motion.span
-                    className="inline-flex items-center rounded-xl bg-white px-4 py-2.5 text-sm font-medium text-slate-700 border border-slate-200 hover:border-cyan-300 hover:text-cyan-600 transition-colors"
+                    className="inline-flex items-center rounded-xl bg-slate-800 px-4 py-2.5 text-sm font-medium text-slate-200 border border-slate-600 hover:border-cyan-500 hover:text-cyan-400 transition-colors"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >
@@ -299,7 +299,7 @@ export function ContactContent() {
                 </Link>
                 <Link href="/portal/register">
                   <motion.span
-                    className="inline-flex items-center rounded-xl bg-white px-4 py-2.5 text-sm font-medium text-slate-700 border border-slate-200 hover:border-cyan-300 hover:text-cyan-600 transition-colors"
+                    className="inline-flex items-center rounded-xl bg-slate-800 px-4 py-2.5 text-sm font-medium text-slate-200 border border-slate-600 hover:border-cyan-500 hover:text-cyan-400 transition-colors"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
                   >

@@ -28,10 +28,10 @@ export function CorporateInternet() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
               </svg>
             </div>
-            <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">
+            <h2 className="text-2xl sm:text-3xl font-bold text-white">
               Corporate Internet
             </h2>
-            <p className="mt-4 text-slate-600 leading-relaxed">
+            <p className="mt-4 text-slate-400 leading-relaxed">
               We offer safe, scalable internet access for enterprises. Dedicated
               support, SLA guarantees, and custom solutions for your business
               needs. Whether you run a small office or a large enterprise, we
@@ -39,7 +39,7 @@ export function CorporateInternet() {
             </p>
             <ul className="mt-6 space-y-3">
               {features.map((feature, i) => (
-                <li key={i} className="flex items-center gap-2 text-slate-600">
+                <li key={i} className="flex items-center gap-2 text-slate-400">
                   <svg className="w-5 h-5 text-cyan-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -49,7 +49,7 @@ export function CorporateInternet() {
             </ul>
             <Link href="/contact">
               <motion.span
-                className="inline-flex items-center gap-2 mt-8 text-cyan-600 font-semibold hover:text-cyan-700"
+                className="inline-flex items-center gap-2 mt-8 text-cyan-400 font-semibold hover:text-cyan-300"
                 whileHover={{ x: 4 }}
               >
                 Contact Sales
@@ -59,10 +59,10 @@ export function CorporateInternet() {
               </motion.span>
             </Link>
           </div>
-          <div className="rounded-2xl bg-slate-100 p-8 lg:p-12 border border-slate-200">
+          <div className="rounded-2xl bg-slate-800 p-8 lg:p-12 border border-slate-700">
             <p className="text-slate-500 text-sm font-medium uppercase tracking-wider">Best for</p>
-            <p className="mt-2 text-xl font-semibold text-slate-900">Enterprises & Large Organizations</p>
-            <p className="mt-4 text-slate-600">
+            <p className="mt-2 text-xl font-semibold text-white">Enterprises & Large Organizations</p>
+            <p className="mt-4 text-slate-400">
               Custom solutions with dedicated bandwidth, SLA guarantees, and
               enterprise-grade support. Scale with confidence.
             </p>

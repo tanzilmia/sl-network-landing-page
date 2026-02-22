@@ -39,13 +39,13 @@ const services = [
 
 export function ServicesOverview() {
   return (
-    <section className="py-16 lg:py-24 bg-slate-50">
+    <section className="py-16 lg:py-24 bg-slate-900">
       <div className="container mx-auto px-4">
         <AnimateSection className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold text-slate-900">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">
             Our Services
           </h2>
-          <p className="mt-4 text-lg text-slate-600">
+          <p className="mt-4 text-lg text-slate-400">
             From home to enterprise, we have the right solution for your
             connectivity needs.
           </p>
@@ -55,7 +55,7 @@ export function ServicesOverview() {
             <motion.div
               key={i}
               variants={fadeInUp}
-              className="rounded-2xl bg-white p-8 shadow-sm border border-slate-200 hover:shadow-lg hover:border-cyan-200 transition-all duration-300 group"
+              className="rounded-2xl bg-slate-800 p-8 shadow-sm border border-slate-700 hover:shadow-lg hover:border-cyan-500/50 transition-all duration-300 group"
               whileHover={{ y: -4 }}
             >
               <motion.div
@@ -65,15 +65,15 @@ export function ServicesOverview() {
               >
                 {service.icon}
               </motion.div>
-              <h3 className="font-semibold text-xl text-slate-900 mb-3">
+              <h3 className="font-semibold text-xl text-white mb-3">
                 {service.title}
               </h3>
-              <p className="text-slate-600 leading-relaxed mb-6">
+              <p className="text-slate-400 leading-relaxed mb-6">
                 {service.description}
               </p>
               <Link
                 href="/services"
-                className="text-cyan-600 font-semibold hover:text-cyan-700 inline-flex items-center gap-1"
+                className="text-cyan-400 font-semibold hover:text-cyan-300 inline-flex items-center gap-1"
               >
                 <motion.span
                   className="inline-flex items-center gap-1"

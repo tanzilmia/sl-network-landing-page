@@ -25,11 +25,11 @@ export function CheckAvailability() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="rounded-2xl bg-white shadow-xl border border-slate-200 p-8 lg:p-10">
-            <h2 className="text-2xl font-bold text-slate-900">
+          <div className="rounded-2xl bg-slate-800 shadow-xl border border-slate-700 p-8 lg:p-10">
+            <h2 className="text-2xl font-bold text-white">
               Check Availability
             </h2>
-            <p className="mt-2 text-slate-600">
+            <p className="mt-2 text-slate-400">
               Enter your area, address, or post code to see if we serve your
               location.
             </p>
@@ -41,7 +41,7 @@ export function CheckAvailability() {
                     value={area}
                     onChange={(e) => setArea(e.target.value)}
                     placeholder="e.g. Bil Muril, Tangail Sadar..."
-                    className="flex-1 rounded-xl border border-slate-300 px-4 py-3 text-slate-900 placeholder:text-slate-400 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
+                    className="flex-1 rounded-xl border border-slate-600 bg-slate-900 px-4 py-3 text-white placeholder:text-slate-500 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500/20"
                     required
                   />
                   <motion.button
@@ -56,15 +56,15 @@ export function CheckAvailability() {
               </form>
             ) : (
               <motion.div
-                className="mt-6 p-4 rounded-xl bg-cyan-50 border border-cyan-200"
+                className="mt-6 p-4 rounded-xl bg-cyan-950/50 border border-cyan-800"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3 }}
               >
-                <p className="text-cyan-800 font-medium">
+                <p className="text-cyan-300 font-medium">
                   Thanks for checking! We&apos;ll verify availability for your area.
                 </p>
-                <p className="mt-2 text-sm text-cyan-700">
+                <p className="mt-2 text-sm text-cyan-400">
                   Our team will contact you shortly. Or call us directly at{" "}
                   <a href="tel:+8801600348844" className="font-semibold underline">
                     +88 01600-348844
@@ -74,7 +74,7 @@ export function CheckAvailability() {
                 <button
                   type="button"
                   onClick={() => setSubmitted(false)}
-                  className="mt-4 text-sm text-cyan-600 font-medium hover:text-cyan-700"
+                  className="mt-4 text-sm text-cyan-400 font-medium hover:text-cyan-300"
                 >
                   Check another area
                 </button>

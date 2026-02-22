@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #0f172a;
-  --primary: #0e7490;
-  --primary-dark: #0c5a6e;
-  --primary-light: #22d3ee;
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --primary: #22d3ee;
+  --primary-dark: #06b6d4;
+  --primary-light: #67e8f9;
   --accent: #0891b2;
-  --muted: #64748b;
-  --muted-bg: #f8fafc;
-  --border: #e2e8f0;
+  --muted: #94a3b8;
+  --muted-bg: #1e293b;
+  --border: #334155;
 }
 
 @theme inline {
@@ -23,4 +23,32 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Hero Swiper pagination */
+.hero-swiper .swiper-pagination {
+  bottom: 2rem !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+.hero-swiper .hero-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.4) !important;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 0 4px !important;
+}
+
+.hero-swiper .hero-bullet:hover {
+  background: rgba(255, 255, 255, 0.7) !important;
+}
+
+.hero-swiper .hero-bullet-active {
+  width: 32px !important;
+  border-radius: 5px !important;
+  background: rgb(34 211 238) !important;
 }
