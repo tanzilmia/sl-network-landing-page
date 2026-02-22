@@ -35,7 +35,7 @@ export function Footer() {
             </Link>
             <p className="text-slate-400 text-sm leading-relaxed max-w-xs">
               Professional broadband internet service provider. Ultra-fast fiber
-              connection for home and business since 2014.
+              connection for home and business since 2017.
             </p>
           </div>
 
@@ -94,7 +94,7 @@ export function Footer() {
                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                   />
                 </svg>
-                <span>Gala Bazar, Post-Gala, P.S. Tangail Sadar, Tangail</span>
+                <span>Bil Muril, Tangail Sadar, Tangail</span>
               </li>
               <li>
                 <a

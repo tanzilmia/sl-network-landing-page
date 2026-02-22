@@ -9,7 +9,7 @@ import { AboutCTA } from "@/components/about/AboutCTA";
 export const metadata: Metadata = {
   title: "About Us | SL Network",
   description:
-    "Learn about SL Network - our story, mission, vision, and commitment to delivering quality broadband internet service since 2014.",
+    "Learn about SL Network - our story, mission, vision, and commitment to delivering quality broadband internet service since 2017.",
 };
 
 export default function AboutPage() {
